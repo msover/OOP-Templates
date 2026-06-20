@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "TableModel.h"
+#include "ProxyTableModel.h"
 #include "../Service/Service.h"
 
 QT_BEGIN_NAMESPACE
@@ -13,13 +14,14 @@ class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit MainWindow(Service& service, TableModel& model, QWidget* parent = nullptr);
+    explicit MainWindow(Service& service, double minValue, TableModel& model, QWidget* parent = nullptr);
     ~MainWindow();
 
 private:
     Ui::MainWindow* ui;
     Service& service;
     TableModel& model;
+    ProxyTableModel proxyModel;
 };
 
 #endif // MAINWINDOW_H

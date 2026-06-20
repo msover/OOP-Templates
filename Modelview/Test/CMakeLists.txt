@@ -12,6 +12,7 @@ add_executable(Test
     main.cpp
     Domain/Item.h
     Domain/Item.cpp
+
         Repo/Repo.h
         Repo/Repo.cpp
         Service/Service.h
@@ -21,6 +22,8 @@ add_executable(Test
     GUI/MainWindow.ui
     GUI/TableModel.h
     GUI/TableModel.cpp
+    GUI/ProxyTableModel.h
+    GUI/ProxyTableModel.cpp
 )
 
 target_link_libraries(Test PRIVATE Qt6::Widgets)

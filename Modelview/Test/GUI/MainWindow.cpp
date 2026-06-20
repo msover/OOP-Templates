@@ -1,11 +1,12 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
 
-MainWindow::MainWindow(Service& service, TableModel& model, QWidget* parent)
-    : QMainWindow{parent}, ui{new Ui::MainWindow}, service{service}, model{model}
+MainWindow::MainWindow(Service& service, double minValue, TableModel& model, QWidget* parent)
+    : QMainWindow{parent}, ui{new Ui::MainWindow}, service{service}, model{model}, proxyModel{minValue, this}
 {
     ui->setupUi(this);
-    ui->tableView->setModel(&model);
+    proxyModel.setSourceModel(&model);
+    ui->tableView->setModel(&proxyModel);
     connect(ui->addButton, &QPushButton::clicked, this, [this]() {
         auto name = ui->nameEdit->text().trimmed().toStdString();
         auto value = ui->valueEdit->text().toDouble();
@@ -20,4 +21,3 @@ MainWindow::MainWindow(Service& service, TableModel& model, QWidget* parent)
 MainWindow::~MainWindow() {
     delete ui;
 }
-
