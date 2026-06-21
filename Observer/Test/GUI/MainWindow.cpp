@@ -10,10 +10,14 @@ MainWindow::MainWindow(Service& service, QWidget* parent)
     ui->setupUi(this);
     ui->tableView->setModel(tableModel);
     ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
     service.addObserver(tableModel);
     service.addObserver(this);
 
     connect(ui->addButton, &QPushButton::clicked, this, [this]() {
+        // auto selectedList = this->ui->tableView->selectionModel()->selectedRows();
+        //if (selectedList.empty()) { return; }
+        // auto row = selectedList.front().row();
         auto name = this->ui->nameLineEdit->text().toStdString();
         int value = this->ui->valueLineEdit->text().toInt();
         this->ui->nameLineEdit->clear();
@@ -25,8 +29,6 @@ MainWindow::MainWindow(Service& service, QWidget* parent)
 }
 
 void MainWindow::update() {
-    // called when the repo changes — refresh any UI state that depends on data
-    // e.g. update labels, enable/disable buttons, etc.
 }
 
 MainWindow::~MainWindow() {

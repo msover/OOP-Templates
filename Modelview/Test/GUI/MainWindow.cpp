@@ -8,7 +8,11 @@ MainWindow::MainWindow(Service& service, double minValue, TableModel& model, QWi
     proxyModel.setSourceModel(&model);
     ui->tableView->setModel(&proxyModel);
     ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
     connect(ui->addButton, &QPushButton::clicked, this, [this]() {
+        // auto selectedList = this->ui->tableView->selectionModel()->selectedRows();
+        // if (selectedList.empty()) { return; }
+        // auto row = selectedList.front().row();
         auto name = ui->nameEdit->text().trimmed().toStdString();
         auto value = ui->valueEdit->text().toDouble();
         if (name.empty()) return;
