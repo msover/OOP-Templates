@@ -5,10 +5,12 @@
   </component>
   <component name="BackendCodeEditorMiscSettings">
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
@@ -26,7 +28,20 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cd8e4b6-ff49-4985-8f27-539641d1673a" name="Changes" comment="" />
+    <list default="true" id="7cd8e4b6-ff49-4985-8f27-539641d1673a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Modelview/Test/Domain/Filter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modelview/Test/Domain/Filter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modelview/Test/Domain/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modelview/Test/Domain/Item.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modelview/Test/Domain/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modelview/Test/Domain/Item.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modelview/Test/GUI/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modelview/Test/GUI/MainWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modelview/Test/GUI/TableModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modelview/Test/GUI/TableModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Modelview/Test/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modelview/Test/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/MainWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/TableModel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/TableModel.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/domain/Item.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,10 +63,10 @@
     <option name="minorVersion" value="1" />
     <option name="productBranch" value="Classic" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3FMsQYDjKJMdiOC1CcS08Eo7tcd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,18 +87,14 @@
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/msover/Work/OOP/OOP-Templates/Modelview/Test",
+    "last_opened_file_path": "/home/msover/Work/OOP/OOP-Templates/Observer/Test",
+    "nodejs_package_manager_path": "npm",
     "org.rust.first.attach.projects": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test" TARGET_NAME="Test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Test" RUN_TARGET_NAME="Test">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -97,6 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1781896257012</updated>
       <workItem from="1781896258379" duration="33000" />
+      <workItem from="1782028773016" duration="192000" />
     </task>
     <servers />
   </component>

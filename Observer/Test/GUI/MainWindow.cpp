@@ -9,13 +9,15 @@ MainWindow::MainWindow(Service& service, QWidget* parent)
 {
     ui->setupUi(this);
     ui->tableView->setModel(tableModel);
-
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     service.addObserver(tableModel);
     service.addObserver(this);
 
     connect(ui->addButton, &QPushButton::clicked, this, [this]() {
         auto name = this->ui->nameLineEdit->text().toStdString();
         int value = this->ui->valueLineEdit->text().toInt();
+        this->ui->nameLineEdit->clear();
+        this->ui->valueLineEdit->clear();
         if (!name.empty())
             this->service.add(name, value);
     });

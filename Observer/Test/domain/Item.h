@@ -10,6 +10,7 @@ public:
     Item(std::string name, int value);
     const std::string& getName() const;
     int getValue() const;
+    std::string toString() const { return name + "|" + std::to_string(value); }
 };
 
 #endif //TEST_ITEM_H

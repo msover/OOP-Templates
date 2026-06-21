@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
     TableModel model{service};
 
     MainWindow w1{service, 0.0, model};
-    MainWindow w2{service, 50.0, model};
+    MainWindow w2{service, 0, model};
     w1.show();
     w2.show();
 

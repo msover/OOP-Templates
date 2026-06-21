@@ -13,6 +13,9 @@ public:
     void setName(std::string name);
     void setValue(double value);
 
+    std::string toString() const;
+
+
 private:
     std::string name;
     double value;

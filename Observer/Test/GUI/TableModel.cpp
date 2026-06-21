@@ -8,28 +8,21 @@ int TableModel::rowCount(const QModelIndex&) const {
 }
 
 int TableModel::columnCount(const QModelIndex&) const {
-    return 2;
+    return 1;
 }
 
 QVariant TableModel::data(const QModelIndex& index, int role) const {
     if (!index.isValid()) return {};
     if (role == Qt::DisplayRole) {
         const auto& item = service.getAll().at(index.row());
-        switch (index.column()) {
-            case 0: return QString::fromStdString(item.getName());
-            case 1: return item.getValue();
-        }
+        return QString::fromStdString(item.toString());
     }
     return {};
 }
 
 QVariant TableModel::headerData(int section, Qt::Orientation orientation, int role) const {
     if (role != Qt::DisplayRole || orientation != Qt::Horizontal) return {};
-    switch (section) {
-        case 0: return "Name";
-        case 1: return "Value";
-    }
-    return {};
+    return "Data";
 }
 
 Qt::ItemFlags TableModel::flags(const QModelIndex& index) const {
